@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:login_page/screens/forgotpassword.dart';
 import '../components/appbar.dart';
 import '../constants/theme.dart';
 import '../screens/investment.dart';
+import 'dashboard.dart';
+import 'signup.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -50,6 +53,12 @@ class _LoginState extends State<Login> {
               ),
               //Forgot Password
               TextButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => ForgotPassword()));
+                },
                 child: Text(
                   'Forgot Password',
                   style: TextStyle(color: ThemeColor.button),
@@ -67,6 +76,10 @@ class _LoginState extends State<Login> {
                     borderRadius: BorderRadius.circular(20)),
                 child: FlatButton(
                   onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => DashBoard()),
+                    );
                     //ADD Route here
                   },
                   child: Text(
@@ -77,6 +90,12 @@ class _LoginState extends State<Login> {
               ),
               // Create Account
               TextButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SignUpForm()),
+                  );
+                },
                 child: Text(
                   'New User? Create Account',
                   style: TextStyle(color: ThemeColor.text),

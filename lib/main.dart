@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:login_page/screens/dashboard.dart';
 import 'screens/login.dart';
+import 'screens/investment.dart';
+import 'screens/return.dart';
+import 'screens/forgotpassword.dart';
+import 'screens/signup.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,7 +14,17 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: Login());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false, home: Login(),
+      // initialRoute: ,
+      routes: {
+        'screens/investment.dart': (context) => InvestInputForm(),
+        'screens/return.dart': (context) => ReturnInputForm(),
+        'screens/dashboard.dart': (context) => DashBoard(),
+        'screens/forgotpassword.dart': (context) => ForgotPassword(),
+        'screens/signup.dart': (context) => SignUpForm(),
+      },
+    );
   }
 }
 
