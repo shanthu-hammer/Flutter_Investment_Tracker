@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-
+import '../components/appbar.dart';
 import '../constants/theme.dart';
+import '../screens/investment.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -11,8 +12,7 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: ThemeColor.button,
+      appBar: MyAppBar(
         title: Text(
           'Login Page',
           textAlign: TextAlign.left,
@@ -56,7 +56,7 @@ class _LoginState extends State<Login> {
                 ),
               ),
               SizedBox(
-                height: 150,
+                height: 76,
               ),
               //Login
               Container(
@@ -66,6 +66,9 @@ class _LoginState extends State<Login> {
                     color: ThemeColor.button,
                     borderRadius: BorderRadius.circular(20)),
                 child: FlatButton(
+                  onPressed: () {
+                    //ADD Route here
+                  },
                   child: Text(
                     'Login',
                     style: TextStyle(color: ThemeColor.background),

@@ -6,3 +6,9 @@ class ThemeColor {
   static const text = Colors.black;
   static const warning = Colors.red;
 }
+
+class StockInfo {
+  static const gain = Colors.green;
+  static const loss = Colors.redAccent;
+  static const unimportant = Colors.grey;
+}
