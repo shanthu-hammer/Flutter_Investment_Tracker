@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "116492481777",
+    "project_id": "stockstracker-cb525",
+    "storage_bucket": "stockstracker-cb525.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116492481777:android:658a19ef61478f9b182550",
+        "android_client_info": {
+          "package_name": "com.example.login_page"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116492481777-1c65vsod5hpdslkpp7k06hh78g6ja7vq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCluBsyUYGs-t-NPEL5AhDqr25-MKpCTwk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116492481777-1c65vsod5hpdslkpp7k06hh78g6ja7vq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

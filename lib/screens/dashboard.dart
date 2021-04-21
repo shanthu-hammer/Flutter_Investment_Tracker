@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../screens/investment.dart';
+import '../constants/a.dart';
 
 class DashBoard extends StatefulWidget {
   @override
@@ -7,8 +8,21 @@ class DashBoard extends StatefulWidget {
 }
 
 class _DashBoardState extends State<DashBoard> {
+  var m = 'click here';
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Column(
+        children: <Widget>[
+          Text(m),
+          FlatButton(
+            child: Text(m),
+            onPressed: () {
+              m = test().a;
+            },
+          )
+        ],
+      ),
+    );
   }
 }
